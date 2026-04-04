@@ -335,7 +335,7 @@ function renderExamSetup(el){
   el.innerHTML=`
     <div class="card exam-config">
       <h2>Simulador de Exame</h2>
-      <p>No exame real: 40 de 60 preguntas sa&iacute;n das primeiras 100</p>
+      <p>No exame real: 60 preguntas, 90 min, aprobar con 30+ correctas (50%)</p>
       <div class="config-grid">
         <div class="config-row"><label>N&uacute;mero:</label><select id="ec"><option value="10">10</option><option value="20">20</option><option value="40" selected>40</option><option value="60">60</option><option value="100">100</option></select></div>
         <div class="config-row"><label>Fonte:</label><select id="es"><option value="first100">Primeiras 100</option><option value="all" selected>Todas</option>${wc?`<option value="wrong">Falladas (${wc})</option>`:''}</select></div>
@@ -379,7 +379,7 @@ function renderExamResults(el){
   const{c,w,u}=S.examResult;
   const total=S.eq.length;
   const pct=Math.round((c/total)*100);
-  const pass=pct>=75;
+  const pass=pct>=50;
   el.innerHTML=`
     <div class="card result-screen">
       <h2>${pass?'Aprobado!':'Suspenso'}</h2>
@@ -389,7 +389,7 @@ function renderExamResults(el){
         <div class="stat stat-wrong"><div class="stat-value">${w}</div><div class="stat-label">Incorrectas</div></div>
         ${u?`<div class="stat stat-pending"><div class="stat-value">${u}</div><div class="stat-label">Sen resposta</div></div>`:''}
       </div>
-      <p style="color:var(--text-light);margin:.8rem 0;font-size:.85rem">${c}/${total} &bull; M&iacute;nimo para aprobar: 75%</p>
+      <p style="color:var(--text-light);margin:.8rem 0;font-size:.85rem">${c}/${total} &bull; M&iacute;nimo para aprobar: 50% (30/60)</p>
       <div class="controls">
         <button class="btn btn-primary" onclick="reviewExam()">Ver respostas</button>
         <button class="btn btn-secondary" onclick="S.eq=[];S.examDone=false;render()">Novo exame</button>
