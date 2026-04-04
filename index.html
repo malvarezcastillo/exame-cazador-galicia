@@ -4,21 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#2d5016">
+<meta name="theme-color" content="#2d5016" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a2e12" media="(prefers-color-scheme: dark)">
 <title>Exame do Cazador - Preparaci&oacute;n</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--green:#2d5016;--green-light:#4a7c24;--green-bg:#f0f5ec;--correct:#2e7d32;--wrong:#c62828;--orange:#e65100;--bg:#f5f5f5;--card:#fff;--text:#222;--text-light:#666;--border:#e0e0e0;--radius:12px}
+:root{--green:#2d5016;--green-light:#4a7c24;--green-bg:#f0f5ec;--correct:#2e7d32;--wrong:#c62828;--orange:#e65100;--bg:#f5f5f5;--card:#fff;--text:#222;--text-light:#666;--border:#e0e0e0;--radius:12px;--correct-bg:#e8f5e9;--wrong-bg:#ffebee;--main-bg:#e3f2fd;--main-color:#1565c0;--reserve-bg:#f3e5f5;--reserve-color:#7b1fa2;--pending-bg:#fff3e0;--input-bg:#fff;--menu-bg:#fff}
+@media(prefers-color-scheme:dark){:root{--green:#5a9e2f;--green-light:#6db83a;--green-bg:#1a2e12;--correct:#66bb6a;--wrong:#ef5350;--orange:#ffa726;--bg:#121212;--card:#1e1e1e;--text:#e0e0e0;--text-light:#999;--border:#333;--correct-bg:#1b3a1b;--wrong-bg:#3a1b1b;--main-bg:#1a2a3a;--main-color:#64b5f6;--reserve-bg:#2a1a3a;--reserve-color:#ce93d8;--pending-bg:#2e2210;--input-bg:#2a2a2a;--menu-bg:#2a2a2a}}
 html{-webkit-tap-highlight-color:transparent}
 body{font-family:-apple-system,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;min-height:100vh;min-height:100dvh;overflow-x:hidden}
 .header{background:linear-gradient(135deg,var(--green),var(--green-light));color:#fff;padding:1rem;text-align:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.15)}
 .header h1{font-size:1.2rem;font-weight:700}
 .header p{font-size:.8rem;opacity:.8;margin-top:.15rem}
 .nav{display:flex;gap:.4rem;justify-content:center;padding:.6rem .5rem;background:var(--green-bg);flex-wrap:wrap;position:sticky;top:52px;z-index:99;position:relative}
-.settings-menu{position:absolute;right:.5rem;top:100%;background:#fff;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.15);padding:.3rem;z-index:200;min-width:180px}
+.settings-menu{position:absolute;right:.5rem;top:100%;background:var(--menu-bg);border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.15);padding:.3rem;z-index:200;min-width:180px}
 .settings-menu button{display:block;width:100%;text-align:left;padding:.5rem .8rem;border:none;background:none;font-size:.85rem;cursor:pointer;border-radius:6px}
 .settings-menu button:hover{background:var(--green-bg)}
-.nav button{padding:.4rem 1rem;border:2px solid var(--green);background:#fff;color:var(--green);border-radius:25px;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap}
+.nav button{padding:.4rem 1rem;border:2px solid var(--green);background:var(--card);color:var(--green);border-radius:25px;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap}
 .nav button.active,.nav button:hover{background:var(--green);color:#fff}
 .container{max-width:750px;margin:0 auto;padding:.8rem}
 .card{background:var(--card);border-radius:var(--radius);box-shadow:0 1px 6px rgba(0,0,0,.06);padding:1.2rem;margin-bottom:.8rem}
@@ -30,9 +32,9 @@ body{font-family:-apple-system,'Segoe UI',system-ui,sans-serif;background:var(--
 .option{padding:.75rem .9rem;border:2px solid var(--border);border-radius:10px;cursor:pointer;transition:all .15s;font-size:.92rem;display:flex;align-items:flex-start;gap:.6rem;-webkit-user-select:none;user-select:none;active-scale:.98}
 .option:active{transform:scale(.98)}
 .option.selected{border-color:var(--green);background:var(--green-bg);font-weight:600}
-.option.correct{border-color:var(--correct);background:#e8f5e9;color:var(--correct);font-weight:600}
-.option.wrong{border-color:var(--wrong);background:#ffebee;color:var(--wrong)}
-.option.show-correct{border-color:var(--correct);background:#e8f5e9}
+.option.correct{border-color:var(--correct);background:var(--correct-bg);color:var(--correct);font-weight:600}
+.option.wrong{border-color:var(--wrong);background:var(--wrong-bg);color:var(--wrong)}
+.option.show-correct{border-color:var(--correct);background:var(--correct-bg)}
 .option .letter{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:26px;border-radius:50%;background:var(--border);font-weight:700;font-size:.8rem;flex-shrink:0;transition:all .15s}
 .option.correct .letter{background:var(--correct);color:#fff}
 .option.wrong .letter{background:var(--wrong);color:#fff}
@@ -60,7 +62,7 @@ body{font-family:-apple-system,'Segoe UI',system-ui,sans-serif;background:var(--
 .exam-config p{color:var(--text-light);margin-bottom:1rem;font-size:.9rem}
 .config-grid{display:flex;flex-direction:column;gap:.6rem;align-items:center;margin-bottom:1.2rem}
 .config-row{display:flex;align-items:center;gap:.6rem;font-size:.9rem}
-.config-row select{padding:.35rem .5rem;border:2px solid var(--border);border-radius:6px;font-size:.9rem;background:#fff}
+.config-row select{padding:.35rem .5rem;border:2px solid var(--border);border-radius:6px;font-size:.9rem;background:var(--input-bg);color:var(--text)}
 .result-screen{text-align:center;padding:1.5rem .8rem}
 .result-screen h2{font-size:1.5rem;margin-bottom:.3rem}
 .result-score{font-size:2.5rem;font-weight:800;margin:.8rem 0}
@@ -75,14 +77,16 @@ body{font-family:-apple-system,'Segoe UI',system-ui,sans-serif;background:var(--
 .cat-chip.active .cat-count{color:var(--green)}
 .counter-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:.6rem;font-size:.82rem;color:var(--text-light)}
 .tag{display:inline-block;padding:.1rem .4rem;border-radius:4px;font-size:.7rem;font-weight:600}
-.tag-pending{background:#fff3e0;color:var(--orange)}
-.tag-main{background:#e3f2fd;color:#1565c0}
-.tag-reserve{background:#f3e5f5;color:#7b1fa2}
+.tag-pending{background:var(--pending-bg);color:var(--orange)}
+.tag-main{background:var(--main-bg);color:var(--main-color)}
+.tag-reserve{background:var(--reserve-bg);color:var(--reserve-color)}
+.chip-main{border-color:var(--main-color)!important;background:var(--main-bg)!important;color:var(--main-color)!important}
+.chip-reserve{border-color:var(--reserve-color)!important;background:var(--reserve-bg)!important;color:var(--reserve-color)!important}
 .bookmark-btn{background:none;border:none;font-size:1.2rem;cursor:pointer;padding:.1rem .3rem}
 .next-hint{text-align:center;margin-top:.6rem;font-size:.8rem;color:var(--text-light);opacity:0;transition:opacity .3s}
 .next-hint.visible{opacity:1}
 .search-wrap{position:relative;margin-bottom:.8rem}
-.search-box{width:100%;padding:.6rem .9rem;padding-left:2.2rem;border:2px solid var(--border);border-radius:10px;font-size:.9rem;background:#fff}
+.search-box{width:100%;padding:.6rem .9rem;padding-left:2.2rem;border:2px solid var(--border);border-radius:10px;font-size:.9rem;background:var(--input-bg);color:var(--text)}
 .search-box:focus{outline:none;border-color:var(--green)}
 .search-icon{position:absolute;left:.7rem;top:50%;transform:translateY(-50%);color:var(--text-light);font-size:.9rem}
 .hidden{display:none}
@@ -220,8 +224,8 @@ function renderPractice(el){
   el.innerHTML=`
     <div class="cat-grid">
       <div class="cat-chip ${S.pCat==='all'?'active':''}" onclick="setCat('all')">Todas<span class="cat-count">${Q.length}</span></div>
-      <div class="cat-chip ${S.pCat==='main'?'active':''}" onclick="setCat('main')" style="${S.pCat==='main'?'border-color:#1565c0;background:#e3f2fd;color:#1565c0':''}">Bloque principal<span class="cat-count">100</span></div>
-      <div class="cat-chip ${S.pCat==='reserve'?'active':''}" onclick="setCat('reserve')" style="${S.pCat==='reserve'?'border-color:#7b1fa2;background:#f3e5f5;color:#7b1fa2':''}">Reserva<span class="cat-count">${Q.length-100}</span></div>
+      <div class="cat-chip ${S.pCat==='main'?'active chip-main':''}" onclick="setCat('main')">Bloque principal<span class="cat-count">100</span></div>
+      <div class="cat-chip ${S.pCat==='reserve'?'active chip-reserve':''}" onclick="setCat('reserve')">Reserva<span class="cat-count">${Q.length-100}</span></div>
       ${CAT_ORDER.map(c=>`<div class="cat-chip ${S.pCat===c?'active':''}" onclick="setCat('${c}')">${CAT_LABELS[c]}<span class="cat-count">${cc[c]||0}</span></div>`).join('')}
     </div>
     <div class="progress-bar"><div class="progress-fill" style="width:${progress}%"></div></div>
