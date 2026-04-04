@@ -14,7 +14,10 @@ body{font-family:-apple-system,'Segoe UI',system-ui,sans-serif;background:var(--
 .header{background:linear-gradient(135deg,var(--green),var(--green-light));color:#fff;padding:1rem;text-align:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,.15)}
 .header h1{font-size:1.2rem;font-weight:700}
 .header p{font-size:.8rem;opacity:.8;margin-top:.15rem}
-.nav{display:flex;gap:.4rem;justify-content:center;padding:.6rem .5rem;background:var(--green-bg);flex-wrap:wrap;position:sticky;top:52px;z-index:99}
+.nav{display:flex;gap:.4rem;justify-content:center;padding:.6rem .5rem;background:var(--green-bg);flex-wrap:wrap;position:sticky;top:52px;z-index:99;position:relative}
+.settings-menu{position:absolute;right:.5rem;top:100%;background:#fff;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.15);padding:.3rem;z-index:200;min-width:180px}
+.settings-menu button{display:block;width:100%;text-align:left;padding:.5rem .8rem;border:none;background:none;font-size:.85rem;cursor:pointer;border-radius:6px}
+.settings-menu button:hover{background:var(--green-bg)}
 .nav button{padding:.4rem 1rem;border:2px solid var(--green);background:#fff;color:var(--green);border-radius:25px;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap}
 .nav button.active,.nav button:hover{background:var(--green);color:#fff}
 .container{max-width:750px;margin:0 auto;padding:.8rem}
@@ -73,6 +76,8 @@ body{font-family:-apple-system,'Segoe UI',system-ui,sans-serif;background:var(--
 .counter-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:.6rem;font-size:.82rem;color:var(--text-light)}
 .tag{display:inline-block;padding:.1rem .4rem;border-radius:4px;font-size:.7rem;font-weight:600}
 .tag-pending{background:#fff3e0;color:var(--orange)}
+.tag-main{background:#e3f2fd;color:#1565c0}
+.tag-reserve{background:#f3e5f5;color:#7b1fa2}
 .bookmark-btn{background:none;border:none;font-size:1.2rem;cursor:pointer;padding:.1rem .3rem}
 .next-hint{text-align:center;margin-top:.6rem;font-size:.8rem;color:var(--text-light);opacity:0;transition:opacity .3s}
 .next-hint.visible{opacity:1}
@@ -104,7 +109,12 @@ body{font-family:-apple-system,'Segoe UI',system-ui,sans-serif;background:var(--
 <button id="nav-exam" onclick="go('exam')">Exame</button>
 <button id="nav-browse" onclick="go('browse')">Buscar</button>
 <button id="nav-review" onclick="go('review')">Erros</button>
-<button onclick="resetAll()" style="margin-left:auto;border-color:var(--wrong);color:var(--wrong)">Reiniciar</button>
+<button onclick="toggleMenu()" style="margin-left:auto;border-color:var(--text-light);color:var(--text-light)" id="menu-btn">&#9881;</button>
+<div id="settings-menu" class="settings-menu hidden">
+<button onclick="exportProgress()">Exportar progreso</button>
+<button onclick="importProgress()">Importar progreso</button>
+<button onclick="resetAll()" style="color:var(--wrong)">Reiniciar todo</button>
+</div>
 </div>
 
 <div class="container" id="app"></div>
@@ -138,7 +148,11 @@ let S={
 };
 
 function save(){localStorage.setItem('cz_w',JSON.stringify(S.wrong));localStorage.setItem('cz_m',JSON.stringify(S.marks));}
-function resetAll(){if(!confirm('Reiniciar todo o progreso? (erros, marcadores, respostas)'))return;S.wrong={};S.marks={};S.pAnswered={};S.pCorrect=0;S.pWrong=0;localStorage.removeItem('cz_w');localStorage.removeItem('cz_m');initPractice();render();}
+function resetAll(){if(!confirm('Reiniciar todo o progreso? (erros, marcadores, respostas)'))return;S.wrong={};S.marks={};S.pAnswered={};S.pCorrect=0;S.pWrong=0;localStorage.removeItem('cz_w');localStorage.removeItem('cz_m');initPractice();render();toggleMenu();}
+function toggleMenu(){document.getElementById('settings-menu').classList.toggle('hidden');}
+function exportProgress(){const d=JSON.stringify({wrong:S.wrong,marks:S.marks});navigator.clipboard.writeText(d).then(()=>alert('Progreso copiado ao portapapeis. Pégao no outro dispositivo con "Importar progreso".')).catch(()=>{prompt('Copia este texto:',d);});toggleMenu();}
+function importProgress(){const t=prompt('Pega aquí o texto exportado:');if(!t)return;try{const d=JSON.parse(t);if(d.wrong)S.wrong=d.wrong;if(d.marks)S.marks=d.marks;save();initPractice();render();alert('Progreso importado correctamente!');}catch(e){alert('Erro: o texto non é válido');}toggleMenu();}
+document.addEventListener('click',e=>{const m=document.getElementById('settings-menu');const b=document.getElementById('menu-btn');if(!m.classList.contains('hidden')&&!m.contains(e.target)&&e.target!==b)m.classList.add('hidden');});
 
 function go(m){
   S.mode=m;
@@ -151,7 +165,7 @@ function go(m){
 function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;}
 
 function initPractice(){
-  let pool=S.pCat==='all'?Q:Q.filter(q=>q.category===S.pCat);
+  let pool=S.pCat==='all'?Q:S.pCat==='main'?Q.filter(q=>q.number<=100):S.pCat==='reserve'?Q.filter(q=>q.number>100):Q.filter(q=>q.category===S.pCat);
   S.pool=shuffle(pool);
   S.pIdx=0;
   S.pAnswered={};
@@ -206,6 +220,8 @@ function renderPractice(el){
   el.innerHTML=`
     <div class="cat-grid">
       <div class="cat-chip ${S.pCat==='all'?'active':''}" onclick="setCat('all')">Todas<span class="cat-count">${Q.length}</span></div>
+      <div class="cat-chip ${S.pCat==='main'?'active':''}" onclick="setCat('main')" style="${S.pCat==='main'?'border-color:#1565c0;background:#e3f2fd;color:#1565c0':''}">Bloque principal<span class="cat-count">100</span></div>
+      <div class="cat-chip ${S.pCat==='reserve'?'active':''}" onclick="setCat('reserve')" style="${S.pCat==='reserve'?'border-color:#7b1fa2;background:#f3e5f5;color:#7b1fa2':''}">Reserva<span class="cat-count">${Q.length-100}</span></div>
       ${CAT_ORDER.map(c=>`<div class="cat-chip ${S.pCat===c?'active':''}" onclick="setCat('${c}')">${CAT_LABELS[c]}<span class="cat-count">${cc[c]||0}</span></div>`).join('')}
     </div>
     <div class="progress-bar"><div class="progress-fill" style="width:${progress}%"></div></div>
@@ -227,11 +243,13 @@ function renderPractice(el){
 function renderQuestion(q, locked){
   const isPending=q.options.some(o=>o.toLowerCase().includes('pendente de resolver'));
   const isMarked=S.marks[q.number];
+  const bloque=q.number<=100?'<span class="tag tag-main">Bloque principal</span>':'<span class="tag tag-reserve">Reserva</span>';
   return `
     <div class="card">
       <div class="q-header">
         <div>
           <span class="q-number">${q.number}ª</span>
+          ${bloque}
           ${isPending?'<span class="tag tag-pending">Pendente</span>':''}
         </div>
         <div>
@@ -287,7 +305,7 @@ function renderExam(el){
     </div>
     <div class="card">
       <div class="q-header">
-        <span class="q-number">${q.number}ª</span>
+        <div><span class="q-number">${q.number}ª</span> ${q.number<=100?'<span class="tag tag-main">Bloque principal</span>':'<span class="tag tag-reserve">Reserva</span>'}</div>
         <span class="q-cat">${CAT_LABELS[q.category]||''}</span>
       </div>
       <div class="q-text">${escHtml(q.question)}</div>
@@ -384,7 +402,7 @@ function reviewExam(){
     const ua=S.ea[i];
     const ok=ua===q.correct;
     h+=`<div class="card" style="border-left:4px solid ${ua===-1?'var(--orange)':ok?'var(--correct)':'var(--wrong)'}">
-      <div class="q-header"><span class="q-number">${q.number}ª</span><span class="q-cat">${CAT_LABELS[q.category]||''}</span></div>
+      <div class="q-header"><div><span class="q-number">${q.number}ª</span> ${q.number<=100?'<span class="tag tag-main">Principal</span>':'<span class="tag tag-reserve">Reserva</span>'}</div><span class="q-cat">${CAT_LABELS[q.category]||''}</span></div>
       <div class="q-text">${escHtml(q.question)}</div>
       <div class="options">${q.options.map((o,j)=>`
         <div class="option ${j===q.correct?'show-correct':''}${ua===j&&j!==q.correct?' wrong':''} locked">
@@ -398,7 +416,7 @@ function reviewExam(){
 
 // Browse
 function renderBrowse(el){
-  let pool=S.bCat==='all'?Q:S.bCat==='marks'?Q.filter(q=>S.marks[q.number]):Q.filter(q=>q.category===S.bCat);
+  let pool=S.bCat==='all'?Q:S.bCat==='main'?Q.filter(q=>q.number<=100):S.bCat==='reserve'?Q.filter(q=>q.number>100):S.bCat==='marks'?Q.filter(q=>S.marks[q.number]):Q.filter(q=>q.category===S.bCat);
   if(S.bSearch){const t=S.bSearch.toLowerCase();pool=pool.filter(q=>q.question.toLowerCase().includes(t)||q.options.some(o=>o.toLowerCase().includes(t))||String(q.number)===S.bSearch);}
   if(S.bIdx>=pool.length)S.bIdx=Math.max(0,pool.length-1);
   const cc=catCounts();
@@ -411,6 +429,8 @@ function renderBrowse(el){
     </div>
     <div class="cat-grid">
       <div class="cat-chip ${S.bCat==='all'?'active':''}" onclick="S.bCat='all';S.bIdx=0;render()">Todas<span class="cat-count">${Q.length}</span></div>
+      <div class="cat-chip ${S.bCat==='main'?'active':''}" onclick="S.bCat='main';S.bIdx=0;render()">Bloque principal<span class="cat-count">100</span></div>
+      <div class="cat-chip ${S.bCat==='reserve'?'active':''}" onclick="S.bCat='reserve';S.bIdx=0;render()">Reserva<span class="cat-count">${Q.length-100}</span></div>
       ${mc?`<div class="cat-chip ${S.bCat==='marks'?'active':''}" onclick="S.bCat='marks';S.bIdx=0;render()">Marcadas<span class="cat-count">${mc}</span></div>`:''}
       ${CAT_ORDER.map(c=>`<div class="cat-chip ${S.bCat===c?'active':''}" onclick="S.bCat='${c}';S.bIdx=0;render()">${CAT_LABELS[c]}<span class="cat-count">${cc[c]||0}</span></div>`).join('')}
     </div>`;
@@ -448,7 +468,7 @@ function renderReview(el){
     </div>
     ${wn.map(n=>{const q=Q.find(x=>x.number===n);if(!q)return'';return`
       <div class="card">
-        <div class="q-header"><span class="q-number">${q.number}ª</span><span class="q-cat">${CAT_LABELS[q.category]||''}</span></div>
+        <div class="q-header"><div><span class="q-number">${q.number}ª</span> ${q.number<=100?'<span class="tag tag-main">Principal</span>':'<span class="tag tag-reserve">Reserva</span>'}</div><span class="q-cat">${CAT_LABELS[q.category]||''}</span></div>
         <div class="q-text">${escHtml(q.question)}</div>
         <div class="options">${q.options.map((o,i)=>`
           <div class="option ${i===q.correct?'show-correct':''} locked">
