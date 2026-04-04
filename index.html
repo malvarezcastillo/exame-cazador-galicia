@@ -104,6 +104,7 @@ body{font-family:-apple-system,'Segoe UI',system-ui,sans-serif;background:var(--
 <button id="nav-exam" onclick="go('exam')">Exame</button>
 <button id="nav-browse" onclick="go('browse')">Buscar</button>
 <button id="nav-review" onclick="go('review')">Erros</button>
+<button onclick="resetAll()" style="margin-left:auto;border-color:var(--wrong);color:var(--wrong)">Reiniciar</button>
 </div>
 
 <div class="container" id="app"></div>
@@ -137,6 +138,7 @@ let S={
 };
 
 function save(){localStorage.setItem('cz_w',JSON.stringify(S.wrong));localStorage.setItem('cz_m',JSON.stringify(S.marks));}
+function resetAll(){if(!confirm('Reiniciar todo o progreso? (erros, marcadores, respostas)'))return;S.wrong={};S.marks={};S.pAnswered={};S.pCorrect=0;S.pWrong=0;localStorage.removeItem('cz_w');localStorage.removeItem('cz_m');initPractice();render();}
 
 function go(m){
   S.mode=m;
