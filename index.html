@@ -517,6 +517,12 @@ document.addEventListener('keydown',e=>{
   if(S.mode==='practice'){
     if(e.key==='ArrowRight'||e.key===' ')pNext();
     if(e.key==='ArrowLeft')pPrev();
+  }else if(S.mode==='exam'&&!S.examDone){
+    if(e.key==='ArrowRight'){S.eIdx=Math.min(S.eq.length-1,S.eIdx+1);render();}
+    if(e.key==='ArrowLeft'){S.eIdx=Math.max(0,S.eIdx-1);render();}
+  }else if(S.mode==='browse'){
+    if(e.key==='ArrowRight'){S.bIdx=Math.min(Q.length-1,S.bIdx+1);render();window.scrollTo(0,0);}
+    if(e.key==='ArrowLeft'){S.bIdx=Math.max(0,S.bIdx-1);render();window.scrollTo(0,0);}
   }
 });
 
