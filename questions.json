@@ -84,8 +84,14 @@
       "Munición con peso unitario superior a 2,5 gramos.",
       "Balas."
     ],
-    "correct": 0,
-    "category": "mamiferos"
+    "correct": 1,
+    "category": "mamiferos",
+    "review": {
+      "status": "corrixida",
+      "original": 0,
+      "note": "La respuesta marcada invierte la regla: los proyectiles de peso inferior a 2,5 g son perdigones, mientras que las postas de peso igual o superior a 2,5 g están prohibidas. La munición de bala para caza menor solo puede emplearse con autorización expresa.",
+      "source": "Lei 13/2013 art. 67.1-2; Vedas 2026/27 art. 11.6"
+    }
   },
   {
     "number": 9,
@@ -129,7 +135,12 @@
       "A Dirección Xeral de Patrimonio Natural"
     ],
     "correct": 1,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "El material antiguo atribuía la autorización a la Delegación o jefatura provincial; la resolución vigente la atribuye a la persona titular del departamento territorial de la consellería. Ninguna opción identifica el órgano con su denominación vigente.",
+      "source": "Vedas 2026/27 art. 13.1 y 13.4; Manual 2019, sección 7"
+    }
   },
   {
     "number": 13,
@@ -217,7 +228,12 @@
       "Mais de 20"
     ],
     "correct": 1,
-    "category": "aves"
+    "category": "aves",
+    "review": {
+      "status": "dubidosa",
+      "note": "El texto explicativo fija una puesta de 12 a 16 huevos, mientras que la opción marcada dice de 10 a 15. Ninguna opción reproduce el rango del manual.",
+      "source": "Manual 2019, cap. perdiz rubia"
+    }
   },
   {
     "number": 21,
@@ -239,7 +255,12 @@
       "1 lebrato"
     ],
     "correct": 0,
-    "category": "mamiferos"
+    "category": "mamiferos",
+    "review": {
+      "status": "dubidosa",
+      "note": "El texto explicativo indica 2 a 3 lebratos por parto, pero la opción marcada amplía el rango a 2 a 5. Ninguna opción coincide exactamente con el manual.",
+      "source": "Manual 2019, cap. lebre"
+    }
   },
   {
     "number": 23,
@@ -337,8 +358,14 @@
       "Si, sempre.",
       "Si , cando as condicións de visibilidade o permitan."
     ],
-    "correct": 2,
-    "category": "mamiferos"
+    "correct": 0,
+    "category": "mamiferos",
+    "review": {
+      "status": "corrixida",
+      "original": 2,
+      "note": "Una carretera local señalizada es zona de seguridad. La visibilidad por sí sola no permite colocar puestos y la excepción legal exige autorización administrativa previa; además, la excepción no menciona las batidas.",
+      "source": "Lei 13/2013 arts. 42.2.a y 42.3"
+    }
   },
   {
     "number": 32,
@@ -360,7 +387,12 @@
       "Moi grave"
     ],
     "correct": 2,
-    "category": "sancions"
+    "category": "sancions",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley derogada calificaba conjuntamente como muy grave soltar especies exóticas o animales infectados. La vigente mantiene como muy grave la introducción de especies alóctonas, pero una suelta cinegética que incumpla las condiciones sanitarias encaja como grave; ninguna opción sirve para ambos supuestos.",
+      "source": "Lei 4/1997 art. 59.2; Lei 13/2013 arts. 53, 85.39 y 86.10"
+    }
   },
   {
     "number": 34,
@@ -397,7 +429,7 @@
   },
   {
     "number": 37,
-    "question": "Das seguintes zonas ¿cal é de seguridade?Pendente de resolver",
+    "question": "Das seguintes zonas ¿cal é de seguridade?",
     "options": [
       "A marxen dunha estrada local sen cercar.",
       "A marxen dunha estrada autonómica sen cercar.",
@@ -405,7 +437,12 @@
       "(As duas)"
     ],
     "correct": 3,
-    "category": "licencias"
+    "category": "licencias",
+    "review": {
+      "status": "dubidosa",
+      "note": "El régimen antiguo solo consideraba zona de seguridad los márgenes cercados, pero la ley vigente incluye las carreteras estatales, autonómicas y locales señalizadas, sus márgenes y una franja adicional, estén cercadas o no. Las tres opciones concretas serían zonas de seguridad y la opción editorial «As duas» no resuelve la pregunta.",
+      "source": "Lei 13/2013 art. 42.2.a; Decreto 284/2001 arts. 13.2.a y 14.1"
+    }
   },
   {
     "number": 38,
@@ -481,8 +518,14 @@
       "Nunha orde anual da Consellería de Medio Ambiente, Territorio e Infraestruturas.",
       "Ningunha das anteriores."
     ],
-    "correct": 1,
-    "category": "administracion"
+    "correct": 2,
+    "category": "administracion",
+    "review": {
+      "status": "normativa",
+      "original": 1,
+      "note": "El reglamento antiguo hablaba de una orden anual, pero la normativa vigente exige una resolución anual de la persona titular de la dirección general competente. Por tanto, actualmente ninguna de las dos primeras opciones es correcta.",
+      "source": "Lei 13/2013 art. 54; Vedas 2026/27, preámbulo"
+    }
   },
   {
     "number": 45,
@@ -515,7 +558,12 @@
       "A Dirección Xeral de Patrimonio Natural"
     ],
     "correct": 1,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "El Decreto atribuye la autorización a la delegación provincial; la ley vigente emplea la denominación persona titular del órgano territorial competente. La opción 1 conserva la equivalencia funcional, pero su nombre administrativo está desactualizado.",
+      "source": "Decreto 284/2001 art. 36.1; Lei 13/2013 art. 19.3"
+    }
   },
   {
     "number": 48,
@@ -526,7 +574,12 @@
       "A Consellería de Medio Ambiente, Territorio e Infraestruturas"
     ],
     "correct": 1,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "El Decreto decía delegación provincial; la resolución vigente exige autorización del correspondiente departamento territorial. La opción 1 es el equivalente funcional, aunque usa la denominación antigua.",
+      "source": "Decreto 284/2001 art. 36.3; Vedas 2026/27 art. 11.2"
+    }
   },
   {
     "number": 49,
@@ -569,8 +622,14 @@
       "C",
       "As dúas son certas"
     ],
-    "correct": 2,
-    "category": "licencias"
+    "correct": 1,
+    "category": "licencias",
+    "review": {
+      "status": "corrixida",
+      "original": 2,
+      "note": "La utilización cinegética de hurones corresponde a la licencia C. La A solo se añade si además se emplea un arma de fuego, circunstancia que la pregunta no especifica.",
+      "source": "Manual 2019, secc. 2.01; Decreto 284/2001 arts. 34.1 y 43"
+    }
   },
   {
     "number": 53,
@@ -602,8 +661,14 @@
       "Un mínimo de 10 e un máximo de 30 cazadores",
       "Un mínimo de 10 e un máximo de 30 cazadores en postos"
     ],
-    "correct": 2,
-    "category": "modalidades"
+    "correct": 1,
+    "category": "modalidades",
+    "review": {
+      "status": "corrixida",
+      "original": 2,
+      "note": "La ley fija entre 10 y 30 participantes en total y establece que en la batida no hay auxiliares; no limita a 30 solo los cazadores en puestos. Para xabaril existe además la excepción de un mínimo de ocho.",
+      "source": "Lei 13/2013 art. 72.1.b; Manual 2019, secc. 5.01"
+    }
   },
   {
     "number": 56,
@@ -653,12 +718,17 @@
     "number": 60,
     "question": "¿Cál destas modalidades é a mais típica para cazar a perdiz rubia en Galicia?",
     "options": [
-      "(Ao Salto)En man Pendente de resolver",
+      "(Ao Salto)En man",
       "Axexo",
       "Con reclamo"
     ],
     "correct": 0,
-    "category": "aves"
+    "category": "aves",
+    "review": {
+      "status": "dubidosa",
+      "note": "El manual enumera en man, axexo y ao salto como modalidades normalmente empleadas, sin establecer cuál es la más típica; la resolución vigente solo fija su período hábil. No hay respaldo suficiente para ordenar esas modalidades por tipicidad.",
+      "source": "Manual 2019, cap. 6, ficha perdiz rubia; Vedas 2026/27 art. 16.1.h"
+    }
   },
   {
     "number": 61,
@@ -688,7 +758,7 @@
     "options": [
       "Ás de caza menor",
       "A calquera",
-      "Coellos e raposos soamente Pendente de resolver"
+      "Coellos e raposos soamente"
     ],
     "correct": 2,
     "category": "mamiferos"
@@ -699,10 +769,15 @@
     "options": [
       "Balas, pois é unha modalidade de caza maior",
       "Perdigóns, pois é unha modalidade de caza menor",
-      "Terei que preguntar si é de día ou de noite pendente de resolver"
+      "Terei que preguntar si é de día ou de noite"
     ],
     "correct": 2,
-    "category": "licencias"
+    "category": "licencias",
+    "review": {
+      "status": "dubidosa",
+      "note": "Ninguna de las opciones es correcta según la normativa vigente. La espera existe tanto como modalidad de caza mayor como de caza menor; la munición depende de esa clasificación y de la especie, no de que sea de día o de noche. Ninguna opción expresa la pregunta necesaria, por lo que no hay índice correcto entre las ofrecidas.",
+      "source": "Lei 13/2013 arts. 67.2-3 y 72.1.d/72.2.e"
+    }
   },
   {
     "number": 65,
@@ -713,7 +788,12 @@
       "Zapeos de raposo"
     ],
     "correct": 0,
-    "category": "aves"
+    "category": "aves",
+    "review": {
+      "status": "dubidosa",
+      "note": "Las tiradas de aves acuáticas deben estar previstas en el plan y comunicarse previamente, pero en 2026/27 la caza en mano del jabalí también exige autorización expresa del titular. La opción marcada sigue siendo válida, pero ya no es la única.",
+      "source": "Decreto 284/2001 art. 38.h; Vedas 2026/27 art. 16.2.b"
+    }
   },
   {
     "number": 66,
@@ -768,7 +848,12 @@
       "100"
     ],
     "correct": 0,
-    "category": "modalidades"
+    "category": "modalidades",
+    "review": {
+      "status": "dubidosa",
+      "note": "Ninguna de las opciones es correcta según la normativa vigente. La montería admite hasta cinco mandas y el reglamento limita cada una a 22 perros en esta modalidad: el máximo es 110, no 125. Ninguna opción del batch contiene 110.",
+      "source": "Lei 13/2013 art. 72.1.a; Decreto 284/2001 art. 37.1"
+    }
   },
   {
     "number": 71,
@@ -823,7 +908,12 @@
       "Dentro da especie a cazar, sempre ao primeiro exemplar que se contacte"
     ],
     "correct": 0,
-    "category": "licencias"
+    "category": "licencias",
+    "review": {
+      "status": "dubidosa",
+      "note": "El reglamento antiguo y el Manual 2019 imponían siempre guía y atribuían a este la selección de la pieza. La ley vigente solo exige guía en parques naturales, terrenos de régimen común y terrenos especiales de titularidad autonómica; fuera de ellos puede no haber guía, por lo que ninguna opción es universalmente correcta.",
+      "source": "Decreto 284/2001 anexo II.1-2; Lei 13/2013 art. 72.1.c (redacción vigente desde 2022)"
+    }
   },
   {
     "number": 76,
@@ -998,8 +1088,14 @@
       "16 anos",
       "16 anos, sempre que se vaia acompañado dun cazador maior de idade"
     ],
-    "correct": 1,
-    "category": "licencias"
+    "correct": 2,
+    "category": "licencias",
+    "review": {
+      "status": "corrixida",
+      "original": 1,
+      "note": "La edad mínima es 16 años, pero el arco está clasificado como arma y la ley exige que las personas menores de edad que cacen con armas vayan acompañadas y vigiladas por una persona adulta.",
+      "source": "Lei 13/2013 art. 58.1.a e c; RD 137/1993 art. 3, categoría 7.5"
+    }
   },
   {
     "number": 92,
@@ -1071,12 +1167,18 @@
     "number": 98,
     "question": "As mandas de cans, deben:",
     "options": [
-      "Constituírse como núcleos zoolóxicos. Pendente de resolver",
+      "Constituírse como núcleos zoolóxicos.",
       "Soamente se precisa licenza especial para o seu emprego no exercicio da caza.",
       "Non precisan ningún tipo de autorización"
     ],
-    "correct": 1,
-    "category": "cans"
+    "correct": 0,
+    "category": "cans",
+    "review": {
+      "status": "corrixida",
+      "original": 1,
+      "note": "Una manda de 15 a 25 perros encaja en la perrera deportiva cinegética, que es un núcleo zoológico sujeto a autorización e inscripción. También necesita la licencia especial, por lo que es falso que esta sea el único requisito.",
+      "source": "Lei 4/2017 arts. 4.18 e 10.2; Lei 13/2013 art. 64.4"
+    }
   },
   {
     "number": 99,
@@ -1150,7 +1252,7 @@
     "options": [
       "Os cazadores en postos",
       "Os encargados dos cans",
-      "Ningún Pendente de resolver"
+      "Ningún"
     ],
     "correct": 2,
     "category": "modalidades"
@@ -1216,7 +1318,7 @@
     "options": [
       "superior aos 2 anos unicamente",
       "inferior a 9 meses unicamente",
-      "superior aos 2 meses Pendente de resolver"
+      "superior aos 2 meses"
     ],
     "correct": 2,
     "category": "mamiferos"
@@ -1292,11 +1394,17 @@
     "question": "Si me invitan a cazar Streptopelia decaopto, teño que:",
     "options": [
       "Non disparar por tratarse dunha especie non cinexética",
-      "Tirar ás rulas turcas Pendente de resolver",
+      "Tirar ás rulas turcas",
       "Tirar ás rulas comúns"
     ],
-    "correct": 1,
-    "category": "normativa"
+    "correct": 0,
+    "category": "normativa",
+    "review": {
+      "status": "normativa",
+      "original": 1,
+      "note": "El reglamento de 2001 incluyó la rula turca entre las especies cazables, pero el Manual 2019 ya indicaba que su caza estaba prohibida y la resolución 2026/27 la prohíbe expresamente; actualmente no se debe disparar.",
+      "source": "Vedas 2026/27 art. 16.1.n; Decreto 284/2001 anexo IV"
+    }
   },
   {
     "number": 119,
@@ -1357,12 +1465,18 @@
     "number": 124,
     "question": "A avefría (Vanellus vanellus) é unha ave que:",
     "options": [
-      "Non se considera cinexética en Galicia Pendente de resolver",
+      "Non se considera cinexética en Galicia",
       "É sedentaria en Galicia",
       "É cinexética e migratoria"
     ],
-    "correct": 2,
-    "category": "aves"
+    "correct": 0,
+    "category": "aves",
+    "review": {
+      "status": "normativa",
+      "original": 2,
+      "note": "El reglamento de 2001 clasificaba la avefría como especie cazable migratoria, que explica la opción marcada. El manual ya indicaba que su caza estaba prohibida y la resolución 2026/27 no la incluye entre las especies objeto de aprovechamiento, por lo que actualmente corresponde la opción 0.",
+      "source": "Decreto 284/2001 anexo IV; Manual 2019, cap. avefría; Vedas 2026/27 anexo II"
+    }
   },
   {
     "number": 125,
@@ -1417,7 +1531,12 @@
       "Corvo cereixeiro (Corvus monedula)"
     ],
     "correct": 0,
-    "category": "aves"
+    "category": "aves",
+    "review": {
+      "status": "dubidosa",
+      "note": "Con el listado antiguo, la gralla cereixeira era cazable y el gaio no, por lo que la marcada era la única correcta. Hoy la gralla cereixeira está expresamente vedada y el gaio tampoco figura entre las especies aprovechables: son correctas las opciones 0 y 2 y no existe una respuesta única.",
+      "source": "Decreto 284/2001 anexo IV; Vedas 2026/27 art. 16.1.n y anexo II"
+    }
   },
   {
     "number": 130,
@@ -1571,7 +1690,12 @@
       "Non o disparo por tratarse dunha especie que só se pode cazar en monterías"
     ],
     "correct": 0,
-    "category": "mamiferos"
+    "category": "mamiferos",
+    "review": {
+      "status": "dubidosa",
+      "note": "El ciervo está en período hábil en noviembre, pero el manual sitúa la caída de la cuerna del corzo en octubre-noviembre y este ya está vedado. Ver una cuerna no basta para identificar la especie y ninguna opción recoge que deba abstenerse hasta identificarla con certeza.",
+      "source": "Manual 2019, §6.02 Corzo y Cervo; Vedas 2026/27, art. 16.2.a y 16.2.c"
+    }
   },
   {
     "number": 144,
@@ -1725,7 +1849,12 @@
       "Cando se cometa calquera tipo de infracción administrativa."
     ],
     "correct": 1,
-    "category": "sancions"
+    "category": "sancions",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley derogada imponía el decomiso de la caza en toda infracción grave o muy grave, que es la opción marcada. La ley vigente solo permite esta medida provisional para infracciones graves o muy graves expresamente enumeradas en el art. 80.1, por lo que ninguna opción es exacta hoy.",
+      "source": "Lei 4/1997 art. 65.1; Lei 13/2013 arts. 80.1 y 81"
+    }
   },
   {
     "number": 159,
@@ -1780,7 +1909,12 @@
       "De 6.000,01 a 30.000 €"
     ],
     "correct": 1,
-    "category": "sancions"
+    "category": "sancions",
+    "review": {
+      "status": "dubidosa",
+      "note": "La opción marcada reproduce la horquilla antigua de 600,01 a 6.000 euros. La norma vigente fija de 601 a 6.000 euros; ninguna opción recoge exactamente ese límite inferior.",
+      "source": "Lei 4/1997 art. 61.1, cuantías actualizadas; Lei 13/2013 art. 88.1.b"
+    }
   },
   {
     "number": 164,
@@ -1791,7 +1925,12 @@
       "24 meses"
     ],
     "correct": 1,
-    "category": "sancions"
+    "category": "sancions",
+    "review": {
+      "status": "dubidosa",
+      "note": "Ignorando el añadido editorial «(3 anos)», la opción marcada dice 12 meses, que era el plazo de la ley derogada. La ley vigente establece tres años y ninguna de las opciones originales lo indica.",
+      "source": "Lei 4/1997 art. 60.1; Lei 13/2013 art. 87.1.b"
+    }
   },
   {
     "number": 165,
@@ -1835,7 +1974,12 @@
       "9.000 €"
     ],
     "correct": 0,
-    "category": "sancions"
+    "category": "sancions",
+    "review": {
+      "status": "dubidosa",
+      "note": "Corrección discutible: el reglamento antiguo podía tratarlo como leve; el encaje en el art. 85.10 de la ley vigente (grave, 900 €) es razonable pero no inequívoco. Incumplir una limitación publicada para cultivos o montes reforestados encaja razonablemente en cazar incumpliendo la normativa por época, lugar o circunstancia prohibida, infracción grave. El importe del tramo grave entre las opciones es 900 €, no 190 €; la correspondencia con el art. 85.10 es semántica, no literal.",
+      "source": "Decreto 284/2001 art. 16; Lei 13/2013 arts. 85.10 y 88.1.b"
+    }
   },
   {
     "number": 169,
@@ -1845,19 +1989,30 @@
       "900 €",
       "9.000 €"
     ],
-    "correct": 1,
-    "category": "sancions"
+    "correct": 2,
+    "category": "sancions",
+    "review": {
+      "status": "corrixida",
+      "original": 1,
+      "note": "El uso de fuentes luminosas artificiales está tipificado expresamente como infracción muy grave, cuyo tramo es 6.001-30.000 €. La opción correcta es 9.000 €, no 900 €.",
+      "source": "Lei 13/2013 arts. 86.14 y 88.1.c"
+    }
   },
   {
     "number": 170,
     "question": "¿Qué sanción correspondería por cazar ocultándose tras un cabalo?",
     "options": [
       "130 €",
-      "900 € Pendente de resolver",
+      "900 €",
       "9.000 €"
     ],
     "correct": 1,
-    "category": "sancions"
+    "category": "sancions",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley tipifica cazar a caballo y aprovecharse de maquinaria agrícola o forestal, pero no cazar ocultándose detrás de un caballo. No hay base suficiente para atribuirle el tramo grave de 900 € ni para equipararlo con seguridad a la infracción leve de cazar a caballo; además, la fuente la marca como pendiente de resolver.",
+      "source": "Lei 13/2013 arts. 70.1.h, 84.7 y 85.37"
+    }
   },
   {
     "number": 171,
@@ -1934,7 +2089,12 @@
       "Necesitará permiso do titular do terreo ou do seu representante para entrar a pola peza, e se se lle nega o permiso pedirá que lla/llela entreguen se fose achada e puidese ser aprehendida."
     ],
     "correct": 2,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "La respuesta marcada sigue la ley antigua (terreo cercado → permiso). El art. 5.2 de la Lei 13/2013 permite cobrar caza menor en terreo alleo si es visible desde el linde y el arma va descargada, sin excepción expresa para cercados. Criterio no resuelto. La exigencia de autorización cuando el terreno ajeno está cercado aparece en el art. 5.3 dentro del supuesto expresamente limitado a piezas de caza mayor. Para una pieza de caza menor rige la regla general del art. 5.2: si es visible desde el linde puede cobrarse entrando con el arma descargada, como indica la opción 0; extender por analogía la restricción del apartado 3 no tiene respaldo textual claro.",
+      "source": "Lei 13/2013 art. 5.2-3; Manual 2019, sección 13"
+    }
   },
   {
     "number": 178,
@@ -2032,8 +2192,14 @@
       "O posuidor.",
       "O posuidor, sen prexuízo da responsabilidade subsidiaria do dono."
     ],
-    "correct": 0,
-    "category": "licencias"
+    "correct": 1,
+    "category": "licencias",
+    "review": {
+      "status": "normativa",
+      "original": 0,
+      "note": "El Manual 2019 afirma en su sección 14.02 que responde el dueño, pero la Lei 4/2017 remite al art. 1905 del Código civil, que responsabiliza al poseedor o a quien se sirve del animal, y la ley de caza responsabiliza al cazador por las acciones del perro. Conforme al derecho vigente, la opción más ajustada es «O posuidor»; la antigua Lei 1/1993 añadía responsabilidad subsidiaria del propietario (opción 2).",
+      "source": "Lei 4/2017 art. 8.1; Código civil art. 1905; Lei 13/2013 art. 64.2; Manual 2019, sec. 14.02"
+    }
   },
   {
     "number": 187,
@@ -2187,7 +2353,12 @@
       "13 a 18 ovos."
     ],
     "correct": 1,
-    "category": "aves"
+    "category": "aves",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ficha descriptiva fija la puesta en 8-12 huevos, mientras que el cuestionario solo ofrece 7-12 como opción aproximada. Ninguna opción reproduce exactamente el dato de la fuente primaria, por lo que no procede proponer otro índice.",
+      "source": "Manual 2019, ficha Paspallás (p. 60) y cuestionario (p. 110)"
+    }
   },
   {
     "number": 201,
@@ -2319,7 +2490,12 @@
       "De 3 a 4 camadas ao ano."
     ],
     "correct": 2,
-    "category": "mamiferos"
+    "category": "mamiferos",
+    "review": {
+      "status": "dubidosa",
+      "note": "El texto descriptivo indica de 2 a 4 partos al año, mientras que la opción marcada dice de 3 a 4. Ninguna opción reproduce el intervalo del manual con precisión.",
+      "source": "Manual 2019, cap. mamíferos, Lebre: ciclo biolóxico"
+    }
   },
   {
     "number": 213,
@@ -2330,7 +2506,12 @@
       "De 5 lebratos."
     ],
     "correct": 1,
-    "category": "mamiferos"
+    "category": "mamiferos",
+    "review": {
+      "status": "dubidosa",
+      "note": "El manual da 2-3 lebratos por parto, no 1-3. Ninguna opción coincide exactamente con el dato local, por lo que no procede validar el intervalo más amplio solo por aproximación.",
+      "source": "Manual 2019, cap. mamíferos, Lebre: ciclo biolóxico"
+    }
   },
   {
     "number": 214,
@@ -2363,7 +2544,12 @@
       "Cun peso de 3 a 3,5 kg."
     ],
     "correct": 0,
-    "category": "mamiferos"
+    "category": "mamiferos",
+    "review": {
+      "status": "dubidosa",
+      "note": "El manual fija el peso adulto en 0,9-1,5 kg, mientras la opción marcada lo reduce a 1-1,5 kg. Al no haber una opción con el intervalo exacto, no se puede confirmar rigurosamente la marcada.",
+      "source": "Manual 2019, cap. mamíferos, Coello: identificación"
+    }
   },
   {
     "number": 217,
@@ -2374,7 +2560,12 @@
       "De 10 a 12 gazapos."
     ],
     "correct": 1,
-    "category": "mamiferos"
+    "category": "mamiferos",
+    "review": {
+      "status": "dubidosa",
+      "note": "El capítulo descriptivo dice 2-6 crías por camada, no 3-9. Ninguna de las tres opciones ofrece el intervalo respaldado por el manual.",
+      "source": "Manual 2019, cap. mamíferos, Coello: reprodución"
+    }
   },
   {
     "number": 218,
@@ -2385,7 +2576,12 @@
       "De 20 a 32 crías por ano."
     ],
     "correct": 1,
-    "category": "mamiferos"
+    "category": "mamiferos",
+    "review": {
+      "status": "dubidosa",
+      "note": "El manual no cuantifica las crías anuales; el Atlas estatal da 3-6 gazapos y normalmente 2-4 camadas, datos que no determinan de forma inequívoca ninguno de los intervalos ofrecidos.",
+      "source": "Manual 2019, Coello: reprodución; MITECO, Atlas de Oryctolagus cuniculus"
+    }
   },
   {
     "number": 219,
@@ -2473,7 +2669,12 @@
       "8 a 12 cachorros."
     ],
     "correct": 1,
-    "category": "mamiferos"
+    "category": "mamiferos",
+    "review": {
+      "status": "dubidosa",
+      "note": "El manual da 4 o 5 cachorros y el Atlas estatal un intervalo de 1 a 7; la opción marcada (3-6) no coincide con ninguna fuente y ninguna alternativa ofrece el dato respaldado.",
+      "source": "Manual 2019, Raposo: reprodución; MITECO, Atlas de Vulpes vulpes"
+    }
   },
   {
     "number": 227,
@@ -2572,7 +2773,12 @@
       "Que ocupa o cuadrante noroccidental da península Ibérica; o norte de Andalucía e os Pirineos orientais."
     ],
     "correct": 2,
-    "category": "mamiferos"
+    "category": "mamiferos",
+    "review": {
+      "status": "dubidosa",
+      "note": "El manual de 2019 plantea la opción 2, pero el censo vigente concentra la presencia estable en el noroeste y norte interior y no registra Andalucía; hay presencia esporádica en el noreste. Ninguna opción describe correctamente la distribución actual.",
+      "source": "Manual 2019, p. 114; Censo nacional del lobo 2021-2024 (MITECO)"
+    }
   },
   {
     "number": 236,
@@ -3001,7 +3207,12 @@
       "A caza maior de alta montaña e calquera ave non migratoria."
     ],
     "correct": 1,
-    "category": "normativa"
+    "category": "normativa",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley derogada exceptuaba expresamente a la caza mayor de alta montaña de la prohibición por suelo nevado, lo que respaldaba la opción marcada. La ley vigente ya no establece excepciones por grupos: prohíbe cazar si la nevada priva a las piezas de su defensa normal o reduce peligrosamente la visibilidad, por lo que ninguna opción expresa la regla actual.",
+      "source": "Lei 4/1997 art. 34.1.4; Lei 13/2013 art. 70.1.b-c y disposición derogatoria única"
+    }
   },
   {
     "number": 275,
@@ -3012,7 +3223,12 @@
       "Un ano."
     ],
     "correct": 1,
-    "category": "sancions"
+    "category": "sancions",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley derogada fijaba seis meses, pero la vigente fija nueve meses. Ignorando «(Nove meses)» como anotación editorial incrustada, ninguna opción contiene el plazo vigente.",
+      "source": "Lei 4/1997 art. 60.1; Lei 13/2013 art. 87.1.a"
+    }
   },
   {
     "number": 276,
@@ -3067,7 +3283,12 @@
       "O Conselleiro de Medio Ambiente, Territorio e Infraestruturas."
     ],
     "correct": 0,
-    "category": "sancions"
+    "category": "sancions",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley derogada atribuía las sanciones leves a los delegados provinciales. La ley y la estructura orgánica vigentes las sitúan en la persona titular del órgano territorial competente, actualmente la dirección territorial; ninguna opción emplea esa autoridad vigente.",
+      "source": "Lei 4/1997 art. 68.a; Lei 13/2013 art. 94.a; Decreto 137/2024 art. 14.2"
+    }
   },
   {
     "number": 281,
@@ -3100,7 +3321,12 @@
       "(Tres anos) Dous anos."
     ],
     "correct": 2,
-    "category": "sancions"
+    "category": "sancions",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley derogada fijaba dos años para las sanciones por infracciones graves, mientras que la vigente fija tres años. Ignorando «(Tres anos)» como anotación editorial incrustada, ninguna opción ofrece el plazo vigente.",
+      "source": "Lei 4/1997 art. 71.1; Lei 13/2013 art. 91.1.b"
+    }
   },
   {
     "number": 284,
@@ -3133,7 +3359,12 @@
       "Na Lei 1/1993, do 13 de abril, de protección de animais domésticos e salvaxes en catividade."
     ],
     "correct": 2,
-    "category": "cans"
+    "category": "cans",
+    "review": {
+      "status": "dubidosa",
+      "note": "El reglamento de 2001 remitía a la Lei 1/1993, pero la Lei 4/2017 la derogó e incluye expresamente a los hurones en su regulación; el manual oficial actualizado también señala la Lei 4/2017. Ninguna opción ofrece la ley vigente.",
+      "source": "Decreto 284/2001 art. 34.1; Lei 4/2017 arts. 1 y 4.1 y disposición derogatoria única; Manual 2019, sec. 1.02"
+    }
   },
   {
     "number": 287,
@@ -3143,8 +3374,14 @@
       "A D. X. de Patrimonio Natural",
       "A Consellería de Medio Ambiente, Territorio e Infraestruturas"
     ],
-    "correct": 2,
-    "category": "administracion"
+    "correct": 1,
+    "category": "administracion",
+    "review": {
+      "status": "normativa",
+      "original": 2,
+      "note": "El reglamento antiguo hablaba de una orden de la consellería, pero la normativa vigente establece una resolución de la persona titular de la dirección general competente; la resolución 2026/27 la dicta la Dirección Xeral de Patrimonio Natural.",
+      "source": "Lei 13/2013 art. 54; Vedas 2026/27, encabezado"
+    }
   },
   {
     "number": 288,
@@ -3165,8 +3402,14 @@
       "A Dirección Xeral de Patrimonio Natural",
       "A Consellería de Medio Ambiente, Territorio e Infraestruturas"
     ],
-    "correct": 0,
-    "category": "licencias"
+    "correct": 2,
+    "category": "licencias",
+    "review": {
+      "status": "normativa",
+      "original": 0,
+      "note": "El reglamento antiguo atribuía a la delegación provincial la declaración en lugares con concentraciones de personas; la ley vigente atribuye la declaración de otros lugares como zonas de seguridad a la persona titular de la consellería competente.",
+      "source": "Lei 13/2013 art. 42.2.e y 42.5; Decreto 284/2001 art. 13.3"
+    }
   },
   {
     "number": 290,
@@ -3188,7 +3431,12 @@
       "A Consellería de Medio Ambiente, Territorio e Infraestruturas."
     ],
     "correct": 2,
-    "category": "administracion"
+    "category": "administracion",
+    "review": {
+      "status": "dubidosa",
+      "note": "El reglamento antiguo permitía que los servicios provinciales autorizasen la eliminación de ejemplares de especies no catalogadas; la legislación vigente exige autorización de la consellería competente en conservación del patrimonio natural. La opción marcada coincide con la norma vigente.",
+      "source": "Lei 5/2019 de patrimonio natural arts. 89 y 99; Decreto 284/2001 art. 20.3"
+    }
   },
   {
     "number": 292,
@@ -3264,8 +3512,14 @@
       "A Dirección Xeral de Patrimonio Natural",
       "A Consellería de Medio Ambiente, Territorio e Infraestruturas"
     ],
-    "correct": 2,
-    "category": "administracion"
+    "correct": 1,
+    "category": "administracion",
+    "review": {
+      "status": "normativa",
+      "original": 2,
+      "note": "El artículo 35 del reglamento antiguo atribuía estas autorizaciones a la consellería, pero el artículo 71 de la ley vigente las atribuye a la dirección general competente en materia de caza.",
+      "source": "Lei 13/2013 art. 71.1; Decreto 284/2001 art. 35.1"
+    }
   },
   {
     "number": 299,
@@ -3474,7 +3728,12 @@
       "6 semanas"
     ],
     "correct": 2,
-    "category": "aves"
+    "category": "aves",
+    "review": {
+      "status": "dubidosa",
+      "note": "El reglamento antiguo permitía la perdiz con reclamo durante un máximo de seis semanas. La ley vigente prohíbe los animales usados como reclamo y ya no incluye esta modalidad, por lo que hoy ninguna opción expresa una duración válida.",
+      "source": "Decreto 284/2001 art. 38.e; Lei 13/2013 arts. 69.1 y 72"
+    }
   },
   {
     "number": 318,
@@ -3496,7 +3755,12 @@
       "Perdiz rubia macho"
     ],
     "correct": 2,
-    "category": "aves"
+    "category": "aves",
+    "review": {
+      "status": "dubidosa",
+      "note": "El reglamento antiguo contemplaba el macho de perdiz como reclamo vivo. La ley vigente prohíbe los animales vivos utilizados como reclamo, así que actualmente ninguna de las tres opciones es válida.",
+      "source": "Decreto 284/2001 arts. 37 y 38.e; Lei 13/2013 art. 69.1"
+    }
   },
   {
     "number": 320,
@@ -3583,8 +3847,14 @@
       "4 meses",
       "2 meses"
     ],
-    "correct": 2,
-    "category": "tecor"
+    "correct": 1,
+    "category": "tecor",
+    "review": {
+      "status": "normativa",
+      "original": 2,
+      "note": "El antiguo reglamento fijaba dos meses y explica la respuesta marcada. La ley vigente concede cuatro meses desde la aprobación provisional para presentar el POC y cumplir las demás obligaciones, por lo que la opción vigente es la de cuatro meses.",
+      "source": "Decreto 284/2001 art. 2.2; Lei 13/2013 art. 15.3; Manual 2019, sec. 8.01"
+    }
   },
   {
     "number": 328,
@@ -3595,7 +3865,12 @@
       "O Director Xeral de Patrimonio Natural"
     ],
     "correct": 0,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "El reglamento atribuía la aprobación al delegado provincial. La ley vigente la atribuye a la persona titular del órgano territorial de dirección competente en conservación de la naturaleza, cargo que ninguna opción nombra correctamente.",
+      "source": "Decreto 284/2001 art. 3.1; Lei 13/2013 art. 14.4"
+    }
   },
   {
     "number": 329,
@@ -3672,7 +3947,12 @@
       "Unha para toda a explotación"
     ],
     "correct": 0,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "Depende de si la 'explotación cinexética comercial' equivale a las 'explotacións cinexético-industriais' exentas por el art. 22.5 del reglamento; si equivale, la respuesta original sería válida. La exención del artículo 22.5 alcanza a granjas y explotaciones cinegético-industriales autorizadas, no a la categoría distinta de explotación cinegética comercial. Para esta última rige la guía individual de cada pieza del artículo 22.2.",
+      "source": "Decreto 284/2001 arts. 9-11 y 22.2, 22.5"
+    }
   },
   {
     "number": 336,
@@ -3682,8 +3962,14 @@
       "Decreto 1398/1993, de 4 de agosto",
       "Decreto 1397/1993, de 4 de agosto"
     ],
-    "correct": 1,
-    "category": "procedemento"
+    "correct": 0,
+    "category": "procedemento",
+    "review": {
+      "status": "corrixida",
+      "original": 1,
+      "note": "La disposición se denominó Real Decreto 1398/1993, no Decreto 1398/1993; su derogación en 2016 no altera ese dato histórico.",
+      "source": "Real Decreto 1398/1993, título y artículo único (derogado)"
+    }
   },
   {
     "number": 337,
@@ -3737,8 +4023,14 @@
       "15 “",
       "20 “"
     ],
-    "correct": 1,
-    "category": "procedemento"
+    "correct": 0,
+    "category": "procedemento",
+    "review": {
+      "status": "normativa",
+      "original": 1,
+      "note": "El RD derogado fijaba quince días. La Ley 39/2015 ya no conserva ese plazo especial y se aplica el plazo general de diez días para cumplimentar el trámite, salvo que una norma específica establezca otro.",
+      "source": "RD 1398/1993 art. 16.1 (derogado) vs Ley 39/2015 arts. 64.2.f y 73.1"
+    }
   },
   {
     "number": 342,
@@ -3760,7 +4052,12 @@
       "1 mes"
     ],
     "correct": 0,
-    "category": "procedemento"
+    "category": "procedemento",
+    "review": {
+      "status": "dubidosa",
+      "note": "El RD derogado imponía exactamente quince días. La ley vigente exige que la propuesta indique un plazo pero no fija ahí una duración cerrada; el trámite de audiencia se mueve entre diez y quince días, de modo que ninguna opción es universalmente correcta.",
+      "source": "RD 1398/1993 art. 19.1 (derogado) vs Ley 39/2015 arts. 82.2 y 89.2"
+    }
   },
   {
     "number": 344,
@@ -3782,7 +4079,12 @@
       "1 mes"
     ],
     "correct": 0,
-    "category": "procedemento"
+    "category": "procedemento",
+    "review": {
+      "status": "dubidosa",
+      "note": "El plazo de diez días desde la recepción de la propuesta pertenecía al RD derogado. La normativa vigente no conserva ese subplazo y solo fija para caza el máximo global de un año desde el acuerdo de iniciación, por lo que ninguna opción es correcta hoy.",
+      "source": "RD 1398/1993 art. 20.2 (derogado) vs Lei 13/2013 art. 92.4 y Ley 39/2015 arts. 87-90"
+    }
   },
   {
     "number": 346,
@@ -3969,7 +4271,12 @@
       "Adquirir cartuchos reforzados."
     ],
     "correct": 2,
-    "category": "armas"
+    "category": "armas",
+    "review": {
+      "status": "dubidosa",
+      "note": "Las fuentes obligan a adecuar presión y longitud del cartucho a la prueba y recámara del arma, pero no definen qué presión implica «cartuchos reforzados». Sin esa especificación no puede confirmarse que la opción marcada sea segura para una escopeta probada a 900 Kp.",
+      "source": "Manual 2019, secciones 10 y 14.01; Reglamento de pruebas de armas de 1979 arts. 86 y 99.d"
+    }
   },
   {
     "number": 362,
@@ -3990,8 +4297,14 @@
       "Unha sinal de primeira orde.",
       "As respostas B e C son correctas."
     ],
-    "correct": 2,
-    "category": "tecor"
+    "correct": 1,
+    "category": "tecor",
+    "review": {
+      "status": "corrixida",
+      "original": 2,
+      "note": "En todas las vías de acceso debe colocarse una señal de primera orden. La opción marcada es además autorreferencial («B e C») y no expresa una respuesta normativa válida.",
+      "source": "Manual 2019, sección 4; Decreto 284/2001 art. 17.2"
+    }
   },
   {
     "number": 364,
@@ -4045,8 +4358,14 @@
       "Fondo branco e letras negras soamente nos TECOR",
       "Fondo azul escuro e letras brancas soamente nos refuxios de fauna"
     ],
-    "correct": 1,
-    "category": "tecor"
+    "correct": 2,
+    "category": "tecor",
+    "review": {
+      "status": "corrixida",
+      "original": 1,
+      "note": "La regla general es letras negras sobre fondo blanco para los distintos espacios cinegéticos, no solo para los Tecor; la excepción son los refugios de fauna, con letras blancas sobre fondo azul oscuro.",
+      "source": "Manual 2019, sección 4; Orde de sinalización de 23-7-2002 art. 5.a"
+    }
   },
   {
     "number": 369,
@@ -4097,11 +4416,16 @@
     "question": "¿Cal destas circunstancias está prohibida en relación cos cans?",
     "options": [
       "Estar soltos en fincas sen cercar",
-      "Camiñar polas rúas sen bozo pendente de resolver",
+      "Camiñar polas rúas sen bozo",
       "Todas"
     ],
     "correct": 2,
-    "category": "cans"
+    "category": "cans",
+    "review": {
+      "status": "dubidosa",
+      "note": "El manual afirma genéricamente que los perros deben llevar bozal en vías públicas, pero la ley vigente solo lo exige a los potencialmente peligrosos; para los demás exige correa y collar y admite excepciones. Tampoco prohíbe de forma absoluta tener un perro suelto en toda finca no cercada, por lo que ninguna opción es correcta tal como está redactada.",
+      "source": "Manual 2019, sección 14.02; Lei 4/2017 arts. 7.3.b, 18.2 y 21.1.b"
+    }
   },
   {
     "number": 374,
@@ -4112,7 +4436,12 @@
       "Matar un can mediante mal trato"
     ],
     "correct": 0,
-    "category": "sancions"
+    "category": "sancions",
+    "review": {
+      "status": "dubidosa",
+      "note": "La opción marcada era una infracción leve resuelta por el alcalde bajo la derogada Lei 1/1993. La Lei 4/2017 ya no tipifica ese censo municipal en esos términos y reserva al alcalde solo las infracciones leves de los apartados 38.c, 38.i y 38.j; ninguna opción encaja hoy.",
+      "source": "Lei 1/1993 arts. 20.j y 24.2.a; Lei 4/2017 disp. derogatoria y art. 46.4"
+    }
   },
   {
     "number": 375,
@@ -4233,7 +4562,12 @@
       "Rexistro Galego de Animais de Compañía Potencialmente Perigosos"
     ],
     "correct": 0,
-    "category": "cans"
+    "category": "cans",
+    "review": {
+      "status": "dubidosa",
+      "note": "La opción marcada reproduce el nombre histórico del Decreto 90/2002 y del Manual 2019, pero la Lei 4/2017 lo renombró «Rexistro Galego de Identificación de Animais de Compañía (Regiac)». Ninguna opción ofrece la denominación vigente.",
+      "source": "Lei 4/2017 disposición transitoria 1.3; Decreto 90/2002 art. 5"
+    }
   },
   {
     "number": 386,
@@ -4287,8 +4621,14 @@
       "Grave",
       "Moi grave"
     ],
-    "correct": 2,
-    "category": "sancions"
+    "correct": 1,
+    "category": "sancions",
+    "review": {
+      "status": "corrixida",
+      "original": 2,
+      "note": "La presencia de un perro potencialmente peligroso en un lugar público sin bozal está expresamente tipificada como infracción grave, no muy grave.",
+      "source": "Ley 50/1999 art. 13.2.d"
+    }
   },
   {
     "number": 391,
@@ -4397,8 +4737,14 @@
       "4",
       "5"
     ],
-    "correct": 2,
-    "category": "tecor"
+    "correct": 1,
+    "category": "tecor",
+    "review": {
+      "status": "normativa",
+      "original": 2,
+      "note": "La ley derogada distinguía cinco categorías, pero la vigente solo contempla cuatro: tecores, reservas de caza, terrenos cinegético-deportivos y explotaciones cinegéticas comerciales.",
+      "source": "Lei 13/2013 art. 10.2; antigua Lei 4/1997 art. 9.2"
+    }
   },
   {
     "number": 401,
@@ -4420,7 +4766,12 @@
       "As vías férreas"
     ],
     "correct": 2,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley antigua excluía expresamente tanto los terrenos cercados como las vías férreas, de modo que había dos opciones válidas. La vigente admite cercados cinegéticos y trata las vías férreas como zonas de seguridad, no como una categoría de terreno no cinegético; ninguna opción encaja inequívocamente.",
+      "source": "Lei 13/2013 arts. 19, 32 y 38-42; antigua Lei 4/1997 art. 8.2"
+    }
   },
   {
     "number": 403,
@@ -4453,7 +4804,12 @@
       "25 m do peche da Autovía do Noroeste"
     ],
     "correct": 2,
-    "category": "licencias"
+    "category": "licencias",
+    "review": {
+      "status": "dubidosa",
+      "note": "Las tres ubicaciones están dentro de una zona de seguridad: 25 m de la última casa queda dentro de 100 m, 50 m del parque empresarial dentro de 100 m y 25 m del cierre de la autovía dentro de 50 m. Ninguna opción es correcta.",
+      "source": "Lei 13/2013 art. 42.2.a, c y d"
+    }
   },
   {
     "number": 406,
@@ -4485,8 +4841,14 @@
       "A Consellería do Medio (Ambiente) Rural",
       "O Director Xeral de Patrimonio Natural"
     ],
-    "correct": 1,
-    "category": "tecor"
+    "correct": 0,
+    "category": "tecor",
+    "review": {
+      "status": "corrixida",
+      "original": 1,
+      "note": "La declaración corresponde a la persona titular de la consellería competente en caza, actualmente la Consellería de Medio Ambiente e Cambio Climático, no a Medio Rural ni a la Dirección Xeral. La denominación de la opción 0 es histórica, pero es la única que identifica el departamento competente.",
+      "source": "Lei 13/2013 art. 27.1; Decreto 137/2024 arts. 1, 2 y 13"
+    }
   },
   {
     "number": 409,
@@ -4519,7 +4881,12 @@
       "1.000 y 2.000 has"
     ],
     "correct": 0,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "La respuesta marcada (50 ha para menor y 100 ha para mayor) era la de la Lei 4/1997. La ley vigente exige 100 ha y 500 ha, respectivamente, combinación que no aparece entre las opciones.",
+      "source": "Lei 13/2013 art. 28; derogada Lei 4/1997 art. 21.3"
+    }
   },
   {
     "number": 412,
@@ -4529,8 +4896,14 @@
       "Poderase cazar adoitando medidas precautorias encamiñadas a garantir a protección das persoas e os seus bens.",
       "Poderase cazar sempre cando se dispare en dirección contraria a edificacións, vías e camiños de uso público."
     ],
-    "correct": 0,
-    "category": "licencias"
+    "correct": 1,
+    "category": "licencias",
+    "review": {
+      "status": "corrixida",
+      "original": 0,
+      "note": "La prohibición no es permanente: la ley admite autorizaciones expresas de caza con condiciones de seguridad. La opción 1 es la única compatible, aunque omite que en los supuestos regulados hace falta autorización.",
+      "source": "Lei 13/2013 arts. 42.1, 42.3-4 y 43"
+    }
   },
   {
     "number": 413,
@@ -4540,8 +4913,14 @@
       "As estradas comarcais",
       "Todos"
     ],
-    "correct": 2,
-    "category": "tecor"
+    "correct": 0,
+    "category": "tecor",
+    "review": {
+      "status": "normativa",
+      "original": 2,
+      "note": "La ley antigua excluía tanto núcleos como carreteras y respaldaba «Todos». La vigente clasifica los núcleos como terrenos no cinegéticos, pero las carreteras como zonas de seguridad; por ello la opción vigente es la 0.",
+      "source": "Lei 13/2013 arts. 32.b, 35 y 42.2.a; derogada Lei 4/1997 art. 8.2"
+    }
   },
   {
     "number": 414,
@@ -4564,7 +4943,12 @@
       "Terreos en réxime cinexético común."
     ],
     "correct": 2,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "La formulación marcada procedía de la ley antigua. La vigente incluye en el régimen común tanto zonas libres como zonas de exclusión, y en estas últimas la caza está prohibida; la respuesta correcta sería «zonas libres», que no figura entre las opciones.",
+      "source": "Lei 13/2013 art. 9.3-5; derogada Lei 4/1997 art. 9.3"
+    }
   },
   {
     "number": 416,
@@ -4597,7 +4981,12 @@
       "Un terreo incendiado."
     ],
     "correct": 0,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley antigua consideraba no cinegético el terreno cercado no sometido a régimen especial y prohibía permanentemente cazar en él. La ley vigente eliminó esa regla y ninguna de las tres opciones es, por sí sola, una clase de terreno no cinegético.",
+      "source": "Lei 13/2013 arts. 31-32 y 38-40; derogada Lei 4/1997 arts. 8.2 y 26.2"
+    }
   },
   {
     "number": 419,
@@ -4608,7 +4997,12 @@
       "Terreos en réxime cinexético común."
     ],
     "correct": 0,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "La inclusión automática de las reservas en el Registro General de Espacios Naturales figuraba en la Lei 4/1997. El artículo 24 vigente ya no establece esa consecuencia y ninguna opción cuenta hoy con ese respaldo.",
+      "source": "Lei 13/2013 art. 24; derogada Lei 4/1997 art. 11.1"
+    }
   },
   {
     "number": 420,
@@ -4663,7 +5057,12 @@
       "25 anos."
     ],
     "correct": 0,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "Los 5 años marcados correspondían a la ley antigua, pero la vigente exige un mínimo de 10 años. El autotest del Manual 2019 ofrece «10 anos» en el índice 1; el batch lo transcribió erróneamente como «15 anos», por lo que ninguna opción textual es correcta hoy.",
+      "source": "Lei 4/1997 art. 13.2 (derogada); Lei 13/2013 arts. 11.2 y 12; Manual 2019, autotest de tecores"
+    }
   },
   {
     "number": 425,
@@ -4674,7 +5073,12 @@
       "30 anos."
     ],
     "correct": 1,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley antigua fijaba 25 años como máximo del régimen especial sin renovación. La vigente solo fija 25 años como máximo de la cesión de derechos, mientras que para la duración del régimen del tecor establece un mínimo de 10 años, pero ningún máximo general; ninguna opción refleja esa regulación.",
+      "source": "Lei 4/1997 art. 13.2, redacción Lei 6/2006 (derogada); Lei 13/2013 arts. 11.2 y 12"
+    }
   },
   {
     "number": 426,
@@ -4740,7 +5144,12 @@
       "En calquera momento anterior á constitución efectiva do Tecor."
     ],
     "correct": 0,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley antigua permitía segregar en cualquier momento los terrenos cuya cesión se hubiese presumido. La vigente permite oponerse a la integración durante la información pública y solo reconoce la segregación en cualquier momento cuando la cesión ya se prorrogó indefinidamente; ninguna opción expresa la regla completa actual.",
+      "source": "Lei 4/1997 art. 14.7 (derogada); Lei 13/2013 arts. 12, 21.2 y 22.2"
+    }
   },
   {
     "number": 432,
@@ -4784,7 +5193,12 @@
       "50 %."
     ],
     "correct": 0,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley derogada exigía reservar al menos el 15 % de los permisos diarios, pero la Lei 13/2013 vigente ya no establece un porcentaje mínimo para cazadores empadronados. Ninguna opción refleja la situación vigente.",
+      "source": "Lei 4/1997 art. 16.7.b (derogada); Lei 13/2013 art. 21 y disposición derogatoria única"
+    }
   },
   {
     "number": 436,
@@ -4795,7 +5209,12 @@
       "Os cazadores foráneos non poden cazar nun Tecor municipal."
     ],
     "correct": 0,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "La ley derogada exigía reservar al menos el 10 %, pero la Lei 13/2013 vigente ya no establece un porcentaje mínimo para cazadores foráneos. Ninguna opción refleja la situación vigente.",
+      "source": "Lei 4/1997 art. 16.7.c; Lei 13/2013 arts. 13.3 y 21"
+    }
   },
   {
     "number": 437,
@@ -4893,8 +5312,14 @@
       "Considéranse zonas de seguridade as marxes e zonas de servidume das vías e camiños de uso público, pero só cando se atopen cercados.",
       "Considéranse zonas de seguridade as marxes e zonas de servidume das vías e camiños de uso público, pero só cando se atopen cercados, máis unha franxa de 50 metros."
     ],
-    "correct": 1,
-    "category": "licencias"
+    "correct": 0,
+    "category": "licencias",
+    "review": {
+      "status": "normativa",
+      "original": 1,
+      "note": "El decreto antiguo limitaba esta consideración a las márgenes y servidumbres cercadas, como afirma la opción marcada. La ley vigente incluye las márgenes y servidumbres estén o no cercadas y amplía la zona 50 m desde el eje o, si hay cierre, desde este; entre las opciones, la 0 es la afirmación verdadera.",
+      "source": "Lei 13/2013 art. 42.2.a; Decreto 284/2001 arts. 13.2.a y 14.1"
+    }
   },
   {
     "number": 446,
@@ -4904,8 +5329,14 @@
       "Prohíbese circular con armas de caza cargadas polas marxes e zonas de servidume das vías e camiños de uso público, máis unha franxa de 50 metros.",
       "Prohíbese circular con armas de caza cargadas polas marxes e zonas de servidume das vías e camiños de uso público, pero só cando se atopen cercados, máis unha franxa de 50 metros a partir do devandito cercado."
     ],
-    "correct": 2,
-    "category": "armas"
+    "correct": 0,
+    "category": "armas",
+    "review": {
+      "status": "normativa",
+      "original": 2,
+      "note": "La opción marcada mezcla el requisito de cierre de la norma antigua con su franja de 50 m. La ley vigente prohíbe portar armas cargadas en todas las márgenes y servidumbres y extiende la zona 50 m desde el eje o desde el cierre; la opción 0 es cierta, aunque no describe toda la extensión actual.",
+      "source": "Lei 13/2013 arts. 42.2.a y 43; Lei 4/1997 art. 25.1.a y 25.4"
+    }
   },
   {
     "number": 447,
@@ -4960,7 +5391,12 @@
       "A resposta A e B son certas"
     ],
     "correct": 2,
-    "category": "tecor"
+    "category": "tecor",
+    "review": {
+      "status": "dubidosa",
+      "note": "El reglamento antiguo exigía al menos un guarda por cada 50.000 ha o fracción y permitía compartirlo entre Tecor colindantes. La ley vigente convierte la vigilancia privada en facultativa, por lo que un Tecor de 2.000 ha no precisa obligatoriamente ningún guarda y ninguna opción expresa esa respuesta.",
+      "source": "Lei 13/2013 art. 76.1-2; Decreto 284/2001 art. 49.1-2"
+    }
   },
   {
     "number": 452,
